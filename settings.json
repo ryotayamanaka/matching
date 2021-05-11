@@ -1,0 +1,299 @@
+{
+  "version": 6,
+  "theme": "light",
+  "height": 300,
+  "similarEdges": "keep",
+  "edgeMarker": "arrow",
+  "vertexGeometry": "sphere",
+  "antiAlias": true,
+  "floorGrid": true,
+  "edgesGeometry": true,
+  "enable3DLayout": false,
+  "selectedPropZ": "",
+  "valueRangePropZ": 0.5,
+  "sortPropZ": "descending",
+  "filters": [
+    {
+      "_id": 1620699862771,
+      "type": "styling",
+      "enabled": true,
+      "conditions": {
+        "operator": "and",
+        "conditions": [
+          {
+            "property": "label",
+            "operator": "=",
+            "value": "VEHICLE"
+          }
+        ]
+      },
+      "component": "vertex",
+      "target": "vertex",
+      "properties": {
+        "colors": [
+          "blue"
+        ],
+        "sizes": [
+          10
+        ],
+        "icons": [
+          "fa-car"
+        ],
+        "iconColors": [
+          "white"
+        ],
+        "label": [
+          "id"
+        ]
+      }
+    },
+    {
+      "_id": 1620699915704,
+      "type": "styling",
+      "enabled": true,
+      "conditions": {
+        "operator": "and",
+        "conditions": [
+          {
+            "property": "label",
+            "operator": "=",
+            "value": "ORDER"
+          }
+        ]
+      },
+      "component": "vertex",
+      "target": "vertex",
+      "properties": {
+        "colors": [
+          "red"
+        ],
+        "sizes": [
+          10
+        ],
+        "icons": [
+          "fa-user-man"
+        ],
+        "iconColors": [
+          "white"
+        ],
+        "label": [
+          "id"
+        ]
+      }
+    },
+    {
+      "_id": 1620699986174,
+      "type": "styling",
+      "enabled": true,
+      "conditions": {
+        "operator": "and",
+        "conditions": [
+          {
+            "property": "label",
+            "operator": "=",
+            "value": "SUBTYPE"
+          }
+        ]
+      },
+      "component": "vertex",
+      "target": "vertex",
+      "properties": {
+        "colors": [
+          "green"
+        ],
+        "icons": [
+          "fa-check"
+        ],
+        "iconColors": [
+          "white"
+        ]
+      }
+    },
+    {
+      "_id": 1620700045686,
+      "type": "styling",
+      "enabled": true,
+      "conditions": {
+        "operator": "and",
+        "conditions": [
+          {
+            "property": "label",
+            "operator": "=",
+            "value": "REQUIRES"
+          }
+        ]
+      },
+      "component": "edge",
+      "target": "edge",
+      "properties": {
+        "label": [
+          "IMPORTANCE"
+        ]
+      }
+    }
+  ],
+  "smartExpands": [],
+  "smartGroups": [],
+  "vertexLabelProperty": null,
+  "edgeLabelProperty": null,
+  "vertexLabelOrientation": "bottom",
+  "vertexPositions": [
+    {
+      "id": "TAB_VEHICLE(1)",
+      "x": 0.43140220726483985,
+      "y": 0.6748223596920819
+    },
+    {
+      "id": "TAB_VEHICLE(2)",
+      "x": 0.20676257832795442,
+      "y": 0.6838373816559701
+    },
+    {
+      "id": "TAB_VEHICLE(4)",
+      "x": 0.5852463167791916,
+      "y": 0.7139065337115009
+    },
+    {
+      "id": "TAB_ORDER(5)",
+      "x": 0.38076093698081165,
+      "y": 0.4331993123491831
+    },
+    {
+      "id": "TAB_VEHICLE(5)",
+      "x": 0.3225012062510195,
+      "y": 0.6940939439776389
+    },
+    {
+      "id": "TAB_VEHICLE(3)",
+      "x": 0.7120645382306267,
+      "y": 0.734089475142981
+    },
+    {
+      "id": "TAB_ORDER(3)",
+      "x": 0.744638319514787,
+      "y": 0.4351477308804038
+    }
+  ],
+  "pageSize": 100,
+  "selectedPage": 0,
+  "charLimit": 10,
+  "truncateLabel": true,
+  "showTitle": true,
+  "dimension": "2d",
+  "layout": "hierarchical",
+  "layoutProperties": {
+    "circle": {
+      "avoidOverlap": true,
+      "radius": 40
+    },
+    "grid": {
+      "avoidOverlap": true,
+      "rows": 5,
+      "columns": 5
+    },
+    "concentric": {
+      "avoidOverlap": true,
+      "minimumVertexSpacing": 10
+    },
+    "force": {
+      "edgeDistance": 120,
+      "forceStrength": -30,
+      "vertexPadding": 40,
+      "velocityDecay": 0.3
+    },
+    "force3D": {
+      "attractionMultiplier": 20,
+      "repulsionMultiplier": 0.2
+    },
+    "geographical": {
+      "latitude": "id",
+      "longitude": "id"
+    },
+    "hierarchical": {
+      "rankDirection": "topBottom",
+      "ranker": "networkSimplex",
+      "align": "None",
+      "vertexSeparation": {
+        "value": 0,
+        "enabled": false
+      },
+      "edgeSeparation": {
+        "value": 0,
+        "enabled": false
+      },
+      "rankSeparation": {
+        "value": 0,
+        "enabled": false
+      }
+    },
+    "radial": {
+      "arcDegree": 360,
+      "startingPoint": "left",
+      "packing": 1,
+      "intelligentSeparation": true
+    }
+  },
+  "animateChanges": true,
+  "liveSearch": {
+    "enabled": false,
+    "enabledTypes": [],
+    "selectedColumns": [],
+    "value": "",
+    "location": 0,
+    "distance": 100,
+    "maxPatternLength": 32,
+    "minMatchCharLength": 1,
+    "advancedSettingsToggle": false,
+    "disabledSelectedColumns": []
+  },
+  "graphAction": {
+    "enabled": true,
+    "graphName": "Matching1",
+    "lastRun": 0,
+    "metadata": {
+      "vertexProperties": [],
+      "edgeProperties": []
+    },
+    "stack": [],
+    "index": 0,
+    "numberOfHops": 1,
+    "smartExpand": 0,
+    "smartGroup": 0
+  },
+  "interactionMode": "select",
+  "networkEvolution": {
+    "enabled": false,
+    "vertexProperty": "id",
+    "vertexEndProperty": "",
+    "dataType": "int",
+    "axis": "vertices",
+    "overview": "on",
+    "height": 100,
+    "overviewChartType": "bar",
+    "valuesToExclude": [],
+    "valuesToExcludeType": "hideBoth",
+    "stepSize": 0,
+    "edgeProperty": "id",
+    "edgeEndProperty": "",
+    "playTimeout": 1000,
+    "playStep": 1,
+    "advancedSettingsToggle": false
+  },
+  "stickyVertices": true,
+  "annotationMode": false,
+  "fitToScreen": true,
+  "viewTransform": [
+    [
+      348.4960090152336,
+      536.9940150658462,
+      0.0005042019282685286,
+      1379
+    ]
+  ],
+  "showLegend": true,
+  "visibleGraphMode": {
+    "enabled": false,
+    "name": ""
+  },
+  "width": 100
+}
