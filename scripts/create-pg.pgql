@@ -1,0 +1,25 @@
+CREATE PROPERTY GRAPH "Matching"
+  VERTEX TABLES (
+    tab_order
+      KEY (id)
+      LABEL order
+  , tab_vehicle
+      KEY (id)
+      LABEL vehicle
+  , tab_subtype
+      KEY (id)
+      LABEL subtype
+  )
+  EDGE TABLES (
+    tab_order_requirement
+      KEY (order_id, subtype)
+      SOURCE KEY (order_id) REFERENCES tab_order
+      DESTINATION KEY (subtype) REFERENCES tab_subtype
+      LABEL requires
+  , tab_vehicle_capability
+      KEY (vehicle_id, subtype)
+      SOURCE KEY (vehicle_id) REFERENCES tab_vehicle
+      DESTINATION KEY (subtype) REFERENCES tab_subtype
+      LABEL provides
+  )
+OPTIONS (PG_VIEW)
