@@ -1,0 +1,6 @@
+SELECT v.id, SUM(r.importance * p.degree) AS score, SUM(r.must) AS num_must
+FROM MATCH (o:order)-[r:requires]->(s:subtype)<-[p:provides]-(v:vehicle)
+WHERE o.id = 1
+  AND 1 = ( SELECT COUNT(*) FROM MATCH (o)-[r2:requires]->(s2:subtype) WHERE r2.must = 1)
+GROUP BY v.id
+ORDER BY score DESC
